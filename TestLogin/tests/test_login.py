@@ -54,7 +54,7 @@ def test_post_login_for_no_valid_password(password, login='login'):
     # Т.к валидации для полей нет, в ответе всегда приходит статус 200
     assert status == 200
     assert 'token' in result
-    print('Response для password = {0}'.format(login))
+    print('Response для password = {0}'.format(password))
     print(result)
 
 
